@@ -21,10 +21,8 @@ const renderMovies = (filter = "") => {
   filteredMovies.forEach((movie) => {
     const movieEl = document.createElement("li");
     const { info, ...otherProps } = movie;
-    console.log(otherProps);
-    // const { title: movieTitle } = info;
+
     let { getFormattedTitle } = movie;
-    // getFormattedTitle = getFormattedTitle.bind(movie);
 
     let text = getFormattedTitle.apply(movie) + " - ";
     for (const key in info) {
@@ -66,7 +64,6 @@ const addMovieHandler = () => {
 };
 
 const searchMovieHandler = () => {
-  console.log(this);
   const filterTerm = document.getElementById("filter-title").value;
   renderMovies(filterTerm);
 };
