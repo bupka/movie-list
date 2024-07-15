@@ -1,5 +1,3 @@
-Got it! Here's the updated README file focusing on the functionalities available in your `objects-movie-list` JavaScript project:
-
 ```markdown
 # Objects Movie List
 
